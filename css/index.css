@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --1rem: 16px;
+    --1setengah:24px;
+    --2rem: 32px;
+
+    --font-reguler: 300;
+    --font-semibold: 900;
+    --font-bold: bold;
+}
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    line-height:1.6;
+}
+
+/* navigation */
+header{
+    background-color: #2d2a30;
+    color: #e0ac1c;
+    padding: var(--1rem);
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a { 
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: var(--font-semibold);
+    color: #e0ac1c;
+    font: normal 36px 'Cookie', cursive;
+}
+
+nav ul{
+    list-style: none;
+    display: flex
+}
+nav li{
+    margin-right: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font: normal 22px 'Cookie', cursive;
+}
+
+nav a:hover{
+    color: #3F71EA;
+    text-decoration: underline;
+}
+
+
+@media (max-width:768px){
+    header{
+    display: block;
+    }
+}
+@media (max-width:512px) {
+    header{
+        display: block;
+    }
+    nav ul{
+        padding: 0px 0px 0px 5px;
+    }
+    nav li{
+        margin: 5px 10px;
+    }
+}
+/* navigation */
+
+/* hero section */
+img{
+    width: 100%;
+}
+.information-section{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.information-content h1{
+    font-size: var(--2rem);
+    font-weight: bold;
+    font: normal 36px 'Cookie', cursive;
+    text-align: center;
+}
+
+.information-content p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.information-misi h1{
+    font-size: var(--2rem);
+    font-weight: bold;
+    font: normal 36px 'Cookie', cursive;
+    text-align: center;
+}
+
+.information-misi p{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+@media(min-width:768){
+    .information-content{
+        padding: 0 200px 0 200px;
+    }
+}
+/*end hero section */
+
+/* doctors section */
+.doctors-section{
+    padding: var(--2rem);
+    text-align: center;
+}
+
+.doctors-section h3{
+    font-size: var(--2rem);
+    font-weight: bold;
+    font: normal 36px 'Cookie', cursive;
+}
+
+.doctors-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--1rem);
+}
+
+.doctors-items{
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0,2);
+    overflow: hidden;
+}
+
+.doctors-items img{
+    display: block;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.doctors-items h4{
+    font-size: var(--1setengah);
+    font-weight: var(--font-semibold);
+    margin: 0;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+.doctors-items p {
+    font-size: 15px;
+    margin: 0;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+@media (max-width:768px){
+    .doctors-grid{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    video{
+        width: 100%;
+    }
+}
+
+@media (max-width:512px){
+    .doctors-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* and doctors section */
+
+
+/* footer */
+.footer {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    position: static;
+    bottom: 0;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .footer-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-icons {
+    margin-top: 25px;
+}
+
+.footer .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 768px) {
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0;
+    }
+}
+/* and footer */
